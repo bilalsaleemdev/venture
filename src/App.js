@@ -34,10 +34,10 @@ function App() {
     <>
       <Router>
         <Routes>
-          <Route path="/login" element={<Login />} />
-          <Route path="/forgot-password" element={<ForgotPassword />} />
-          <Route path="/register" element={<Register />} />
-          <Route path="/documentation" element={<Documentation />} />
+          {/* <Route path="/login" element={<Login />} /> */}
+          {/* <Route path="/forgot-password" element={<ForgotPassword />} /> */}
+          {/* <Route path="/register" element={<Register />} /> */}
+          {/* <Route path="/documentation" element={<Documentation />} /> */}
           {/* Place new routes over this */}
           <Route path="/*" element={<Layout />} />
           <Route path="*" element={<Navigate to={token ? "/welcome" : "/login"} replace />}/>

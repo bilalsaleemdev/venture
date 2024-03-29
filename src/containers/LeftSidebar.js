@@ -30,14 +30,14 @@ function LeftSidebar() {
     return (
         <div className="drawer-side ">
             <label htmlFor="left-sidebar-drawer" className="drawer-overlay"></label>
-            <ul className="menu  -p/t-2 w-80 bg-[#F9F9F9] text-base-content  border-r">
+            <ul className="menu  -p/t-2 w-80 bg-[#F9F9F9] text-base-content  border-r pl-6">
                 {/* <button className="btn btn-ghost bg-base-300  btn-circle z-50 top-0 right-0 mt-4 mr-2 absolute lg:hidden" onClick={() => close()}>
                     <XMarkIcon className="h-5 inline-block w-5" />
                 </button> */}
 
-                <li className="mb-10 font-semibold text-xl border-b">
+                <li className="mb-10 font-semibold text-xl border-b h-[78px] flex justify-center content-start">
                     <Link to={'#'}>
-                        <img className="w-60" src="/logo192.png" alt="DashWind Logo" />
+                        <img className="w-40" src="/Logo.png" alt="DashWind Logo" />
                     </Link>
                 </li>
 
