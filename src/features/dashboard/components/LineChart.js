@@ -44,8 +44,9 @@ function LineChart(){
       fill: true,
       label: 'MAU',
       data: labels.map(() => { return Math.random() * 100 + 500 }),
-      borderColor: 'rgb(53, 162, 235)',
-      backgroundColor: 'rgba(53, 162, 235, 0.5)',
+      borderColor: '#000',
+      // add the gradient to the chart
+      backgroundColor: 'rgba(0, 0, 0, 0)',
     },
   ],
 };

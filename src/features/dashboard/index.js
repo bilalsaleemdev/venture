@@ -14,6 +14,7 @@ import { useDispatch } from 'react-redux'
 import {showNotification} from '../common/headerSlice'
 import DoughnutChart from './components/DoughnutChart'
 import React, { useState } from 'react'
+import DashboardTable from './components/DashboardTable'
 
 const statsData = [
     {title : "New Users", value : "34.7k", icon : <UserGroupIcon className='w-8 h-8'/>, description : "↗︎ 2300 (22%)"},
@@ -37,10 +38,10 @@ function Dashboard(){
     return(
         <>
         {/** ---------------------- Select Period Content ------------------------- */}
-            <DashboardTopBar updateDashboardPeriod={updateDashboardPeriod}/>
+            {/* <DashboardTopBar updateDashboardPeriod={updateDashboardPeriod}/> */}
         
         {/** ---------------------- Different stats content 1 ------------------------- */}
-            <div className="grid lg:grid-cols-4 mt-2 md:grid-cols-2 grid-cols-1 gap-6">
+            {/* <div className="grid lg:grid-cols-4 mt-2 md:grid-cols-2 grid-cols-1 gap-6">
                 {
                     statsData.map((d, k) => {
                         return (
@@ -48,29 +49,30 @@ function Dashboard(){
                         )
                     })
                 }
-            </div>
+            </div> */}
 
 
 
         {/** ---------------------- Different charts ------------------------- */}
-            <div className="grid lg:grid-cols-2 mt-4 grid-cols-1 gap-6">
+            <div className="grid lg:grid-cols-1 mt-4 grid-cols-1 gap-6">
                 <LineChart />
-                <BarChart />
+                <DashboardTable />
+                {/* <BarChart /> */}
             </div>
             
         {/** ---------------------- Different stats content 2 ------------------------- */}
         
-            <div className="grid lg:grid-cols-2 mt-10 grid-cols-1 gap-6">
+            {/* <div className="grid lg:grid-cols-2 mt-10 grid-cols-1 gap-6">
                 <AmountStats />
                 <PageStats />
-            </div>
+            </div> */}
 
         {/** ---------------------- User source channels table  ------------------------- */}
         
-            <div className="grid lg:grid-cols-2 mt-4 grid-cols-1 gap-6">
+            {/* <div className="grid lg:grid-cols-2 mt-4 grid-cols-1 gap-6">
                 <UserChannels />
                 <DoughnutChart />
-            </div>
+            </div> */}
         </>
     )
 }

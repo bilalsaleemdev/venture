@@ -30,37 +30,34 @@ function LeftSidebar() {
     return (
         <div className="drawer-side ">
             <label htmlFor="left-sidebar-drawer" className="drawer-overlay"></label>
-            <ul className="menu  pt-2 w-80 bg-base-100 text-base-content">
-                <button className="btn btn-ghost bg-base-300  btn-circle z-50 top-0 right-0 mt-4 mr-2 absolute lg:hidden" onClick={() => close()}>
+            <ul className="menu  -p/t-2 w-80 bg-[#F9F9F9] text-base-content  border-r">
+                {/* <button className="btn btn-ghost bg-base-300  btn-circle z-50 top-0 right-0 mt-4 mr-2 absolute lg:hidden" onClick={() => close()}>
                     <XMarkIcon className="h-5 inline-block w-5" />
-                </button>
+                </button> */}
 
-                <li className="mb-2 font-semibold text-xl">
-                    <Link to={'/app/welcome'}>
+                <li className="mb-10 font-semibold text-xl border-b">
+                    <Link to={'#'}>
                         <img className="w-60" src="/logo192.png" alt="DashWind Logo" />
                     </Link>
                 </li>
-                <div className='w-10 p-6 w-full bg-slate-50'>
-                    <div class="relative w-full ">
-                        <input type="search" class="w-full pading-left pr-4 py-2 rounded-lg border-1 border-gray-200 focus:outline-none focus:border-blue-500" placeholder="Search..." />
 
-                    </div>
-                </div>
-                <div className=" overflow-auto ">
+                <div className=" overflow-aut ">
                     {
                         routes.map((route, k) => {
                             return (
                                 <li className="" key={k}>
                                     {
                                         route.submenu ?
-                                            <SidebarSubmenu {...route} /> :
+                                            // <SidebarSubmenu {...route} />
+                                            null
+                                            :
                                             (<NavLink
                                                 end
                                                 to={route.path}
-                                                className={({ isActive }) => `${isActive ? 'font-semibold  bg-base-200 ' : 'font-normal'}`} >
+                                                className={({ isActive }) => `${isActive ? '-font-semibold  -bg-base-200 ' : '-font-normal'}`} >
                                                 {route.icon} {route.name}
                                                 {
-                                                    location.pathname === route.path ? (<span className="absolute inset-y-0 left-0 w-1 rounded-tr-md rounded-br-md bg-primary "
+                                                    location.pathname === route.path ? (<span className="absolute inset-y-0 left-0 w-1 rounded-tr-md rounded-br-md -bg-primary "
                                                         aria-hidden="true"></span>) : null
                                                 }
                                             </NavLink>)
@@ -75,8 +72,8 @@ function LeftSidebar() {
 
 
             </ul>
-            <div className='footerposition'>
-                <div className='w-10 p-6 w-full bg-slate-50 '>
+            <div className='footerposition reletive'>
+                {/* <div className='w-10 p-6 w-full bg-slate-50 '>
                     <div class="relative w-full ">
                         <div class="grid grid-cols-3 gap-4">
                             <div className='text-center  bg-tabperp p-2 rounded-xl'>
@@ -94,9 +91,9 @@ function LeftSidebar() {
 
                         </div>
                     </div>
-                </div>
+                </div> */}
 
-                <div className='w-10 p-6 w-full  '>
+                <div className='w-10 p-6 w-full absolute'>
                     <div class="s w-full ">
                         <div class="grid grid-cols-12 ">
                             {/* <div className="navbar  flex justify-between  header-trans z-10 shadow-md ">
@@ -129,7 +126,7 @@ function LeftSidebar() {
                                     <div class="col-span-8">
                                         <label className="">
                                             <div className=" text-base">
-                                            Michael Jordan
+                                                Michael Jordan
                                             </div>
                                             <p className='text-xs text-blue-800'>Last login  50min</p>
                                         </label>
@@ -150,17 +147,7 @@ function LeftSidebar() {
                         </div>
                     </div>
                 </div>
-
-
-
-
-
             </div>
-
-
-
-
-
         </div>
     )
 }
