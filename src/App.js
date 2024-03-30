@@ -18,7 +18,7 @@ initializeApp()
 
 
 // Check for login and initialize axios
-const token = checkAuth()
+// const token = checkAuth()
 
 
 function App() {
@@ -40,7 +40,7 @@ function App() {
           {/* <Route path="/documentation" element={<Documentation />} /> */}
           {/* Place new routes over this */}
           <Route path="/*" element={<Layout />} />
-          <Route path="*" element={<Navigate to={token ? "/welcome" : "/login"} replace />}/>
+          {/* <Route path="*" element={<Navigate to={!token ? "/welcome" : "/login"} replace />}/> */}
 
         </Routes>
       </Router>
