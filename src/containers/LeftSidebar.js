@@ -30,12 +30,12 @@ function LeftSidebar() {
     return (
         <div className="drawer-side ">
             <label htmlFor="left-sidebar-drawer" className="drawer-overlay"></label>
-            <ul className="menu  -p/t-2 w-80 bg-[#F9F9F9] text-base-content  border-r pl-6">
+            <ul className="menu  -p/t-2 w-80 bg-[#F9F9F9] text-base-content  border-r">
                 {/* <button className="btn btn-ghost bg-base-300  btn-circle z-50 top-0 right-0 mt-4 mr-2 absolute lg:hidden" onClick={() => close()}>
                     <XMarkIcon className="h-5 inline-block w-5" />
                 </button> */}
 
-                <li className="mb-10 font-semibold text-xl border-b h-[78px] flex justify-center content-start">
+                <li className="pl-5 mb-10 font-semibold text-xl border-b h-[78px] flex justify-center content-start">
                     <Link to={'#'}>
                         <img className="w-40" src="/Logo.png" alt="DashWind Logo" />
                     </Link>
@@ -45,7 +45,7 @@ function LeftSidebar() {
                     {
                         routes.map((route, k) => {
                             return (
-                                <li className="" key={k}>
+                                <li className="pl-5" key={k}>
                                     {
                                         route.submenu ?
                                             // <SidebarSubmenu {...route} />

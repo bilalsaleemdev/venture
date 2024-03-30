@@ -55,16 +55,16 @@ function LineChart() {
   // };
 
   return (
-    <TitleCard title={"Montly Active Users (in K)"}>
-      <div className="w-full h-[45vh]">
+    <TitleCard title={"Sales Revenues"}>
+      <div className="w-full h-[50vh] ">
         {/* <Line data={data} options={options} /> */}
-        <div className='flex justify-between'>
-          <div className=''>
-            <div className='flex'>
-              <h1>$220,123k</h1>
-              <p>total revenue</p>
+        <div className='flex justify-between '>
+          <div className=' w-[30%] h-[20%]'>
+            <div className='flex items-center' >
+              <h1 className='text-5xl font-bold '>$220,123k</h1>
+              <p className='text-[green] ml-[20px] bg-[#EEF5F0] rounded-2xl p-2 relative flex'><img src='./TrendUp.svg' className='pr-2'/>12%</p>
             </div>
-            <p>this year</p>
+            <p className='text-[gray] mt-[15px]'>this year</p>
           </div>
           <div className='flex'>
             {/* add two select */}

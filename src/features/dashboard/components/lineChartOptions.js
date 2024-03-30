@@ -5,7 +5,7 @@ export const options = {
     },
     xAxis: {
       type: 'category',
-      data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+      data: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
     },
     yAxis: {
       type: 'value'
@@ -15,11 +15,14 @@ export const options = {
         top: '10%',
         containLabel: true,
         width: '100%',  // Increase the width of the chart
-        height: '90%'  // Increase the height of the chart
+        height: '75%'  // Increase the height of the chart
     },
+    tooltip: {
+                trigger: 'axis'
+            },
     series: [
       {
-        data: [150, 230, 224, 218, 135, 147, 260],
+        data: [150, 230, 224, 218, 135, 147, 260, 160, 260,160,160,260],
         type: 'line',
         color: '#000',
         areaStyle: {
@@ -31,7 +34,7 @@ export const options = {
                 x2: 0,
                 y2: 1,
                 colorStops: [{
-                    offset: 0, color: 'lightgray' // color at 0% position
+                    offset: 0, color: '#EDEDED' // color at 0% position
                 }, {
                     offset: 1, color: '#fff' // color at 100% position
                 }],
