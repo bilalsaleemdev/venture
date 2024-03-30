@@ -63,7 +63,7 @@ function DashboardTable() {
 
                     <table className="w-full">
                         <thead className="">
-                            <tr className="h-[55px] -border -bg-[#F9F9F9]">
+                            <tr className="h-[55px] -border bg-[#F9F9F9]">
                                 <th> <span className="flex p-[16px] border-l border-y rounded-l-lg"><input type="checkbox" name="" id="" /><p className="text-[#727272] ml-[8px] mr-[4px]">Id</p></span></th>
                                 <th><span className="flex p-[16px] border-y"><p className="text-[#727272] ml-[8px] mr-[4px]">Date</p> <img src="/images/dashboard-table-arrow.svg" alt="" /></span></th>
                                 <th><span className="flex p-[16px] border-y"><p className="text-[#727272] ml-[8px] mr-[4px]">Client</p><img src="/images/dashboard-table-arrow.svg" alt="" /></span></th>
