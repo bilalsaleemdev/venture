@@ -9,6 +9,7 @@ import { openRightDrawer } from '../features/common/rightDrawerSlice';
 import { RIGHT_DRAWER_TYPES } from '../utils/globalConstantUtil'
 
 import { NavLink, Routes, Link, useLocation } from 'react-router-dom'
+import InputSearch from '../components/Input/InputSearch'
 
 
 function Header() {
@@ -43,62 +44,33 @@ function Header() {
 
     return (
         <>
-            <div className="navbar p-[13.5px] flex justify-between  header-trans z-10 -border border-b -shadow-md -hidden">
-
-
-                {/* Menu toogle for mobile view or small screen */}
+            <div className="navbar h-[78px] flex justify-between  header-trans z-10 -border border-b -shadow-md -hidden px-6 relative">
+            {/* <div className='h-[40px] w-[40px] flex items-center -justify-center bg-[red] absolute left-[-20px] z-[9999]'>
+                    <img src="/images/sidebar-reaponsive-icon.svg" alt="" className='h-[40px] w-[40px]' />
+                </div> */}
                 <div className="">
                     <label htmlFor="left-sidebar-drawer" className="btn btn-primary drawer-button lg:hidden">
                         <Bars3Icon className="h-5 inline-block w-5" /></label>
-                    {/* <h1 className="text-2xl font-semibold ml-2">{pageTitle}</h1> */}
-                    {/* Sreach Bar */}
-                    <div className='w-10 -p-6 w-full bg-slate-50'>
                         <div class="relative w-full ">
-                            <input type="search" class="w-full pading-left pr-4 py-2 rounded-lg border-1 border-gray-200 focus:outline-none focus:border-blue-500" placeholder="Search..." />
+                            <InputSearch/>
                         </div>
-                    </div>
                 </div>
-
-
-
                 <div className="order-last">
-
-                    {/* Multiple theme selection, uncomment this if you want to enable multiple themes selection, 
-                also includes corporate and retro themes in tailwind.config file */}
-
-                    {/* <select className="select select-sm mr-4" data-choose-theme>
-                    <option disabled selected>Theme</option>
-                    <option value="light">Default</option>
-                    <option value="dark">Dark</option>
-                    <option value="corporate">Corporate</option>
-                    <option value="retro">Retro</option>
-                </select> */}
-
-
-                    {/* Light and dark theme selection toogle **/}
-                    {/* <label className="swap ">
-                <input type="checkbox"/>
-                <SunIcon data-set-theme="light" data-act-class="ACTIVECLASS" className={"fill-current w-6 h-6 "+(currentTheme === "dark" ? "swap-on" : "swap-off")}/>
-                <MoonIcon data-set-theme="dark" data-act-class="ACTIVECLASS" className={"fill-current w-6 h-6 "+(currentTheme === "light" ? "swap-on" : "swap-off")} />
-            </label> */}
-
-
-                    {/* Notification icon */}
-                    {/* <button className="btn btn-ghost ml-4  btn-circle" onClick={() => openNotification()}>
-                        <div className="indicator">
-                            <BellIcon className="h-6 w-6" />
-                            {noOfNotifications > 0 ? <span className="indicator-item badge badge-secondary badge-sm">{noOfNotifications}</span> : null}
-                        </div>
-                    </button> */}
-
-
-                    {/* Profile icon, opening menu on click */}
+                <span className='flex '><img src="/images/header-questionmark.svg" alt="" className='mr-[8px] cursor-pointer' /> <p className='text-[#727272] font-semibold cursor-pointer'>Help Center</p></span>
                     <div className="dropdown dropdown-end ml-4">
-                        <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+                    <span className='flex items-center'>
+                        <label tabIndex={0} className="flex btn btn-ghost btn-circle avatar">
                             <div className="w-10 rounded-full">
-                                <img src="/hero.png" alt="profile" />
+                                <img src="/images/header-profile-img.svg" alt="profile" />
                             </div>
                         </label>
+                        <label tabIndex={0}>
+                        <p className='font-semibold cursor-pointer'>Brian F.</p>
+                        </label>
+                        <label tabIndex={0}>
+                            <img src="/images/header-arrow.svg" alt="" className='cursor-pointer' />
+                        </label>
+                    </span>
                         <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
                             <li className="justify-between">
                                 <Link to={'/app/settings-profile'}>

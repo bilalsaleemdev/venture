@@ -33,11 +33,14 @@ function LeftSidebar() {
             <ul className="menu  -p/t-2 w-[260px] bg-[#F9F9F9] text-base-content  border-r">
                 {/* <button className="btn btn-ghost bg-base-300  btn-circle z-50 top-0 right-0 mt-4 mr-2 absolute lg:hidden" onClick={() => close()}>
                     <XMarkIcon className="h-5 inline-block w-5" />
+                <div className='h-[40px] w-[40px] flex items-center -justify-center bg-[red] absolute right-[-20px] z-50'>
+                    <img src="/images/sidebar-reaponsive-icon.svg" alt="" className='h-[40px] w-[40px]' />
+                </div>
                 </button> */}
 
-                <li className="pl-5 mb-10 font-semibold text-xl border-b h-[78px] flex justify-center content-start">
+                <li className="pl-5 mb-10 font-semibold text-xl border-b h-[78px] flex justify-center content-start relative">
                     <Link to={'#'}>
-                        <img className="w-40" src="/Logo.png" alt="DashWind Logo" />
+                        <img className="w-40" src="/images/weblogo.svg" alt="DashWind Logo" />
                     </Link>
                 </li>
 

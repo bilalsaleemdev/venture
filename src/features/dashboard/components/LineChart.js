@@ -62,7 +62,7 @@ function LineChart() {
           <div className=' w-[30%] h-[20%]'>
             <div className='flex items-center' >
               <h1 className='text-5xl font-bold '>$220,123k</h1>
-              <p className='text-[green] ml-[20px] bg-[#EEF5F0] rounded-2xl p-2 relative flex'><img src='./TrendUp.svg' className='pr-2'/>12%</p>
+              <p className='text-[green] ml-[20px] bg-[#EEF5F0] rounded-2xl p-2 relative flex px-[20px]'><img src='./TrendUp.svg' className='pr-2'/>12%</p>
             </div>
             <p className='text-[gray] mt-[15px]'>this year</p>
           </div>

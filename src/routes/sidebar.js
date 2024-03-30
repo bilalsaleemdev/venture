@@ -33,7 +33,7 @@ const routes = [
   {
     path: '/dashboard',
     icon: <Squares2X2Icon className={iconClasses}/>, 
-    name: 'Dashboard',
+    name: 'Analytics',
   },
   // {
   //   path: '/leads', // url

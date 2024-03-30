@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react"
 import { useDispatch, useSelector } from "react-redux"
 import TitleCard from "../../../components/Cards/TitleCard"
 import { showNotification } from '../../common/headerSlice'
+import InputSearch from "../../../components/Input/InputSearch"
 // import Input from "react-select/dist/declarations/src/components/Input"
 
 const TopSideButtons = () => {
@@ -16,14 +17,15 @@ const TopSideButtons = () => {
     return (
         [
         <div className="inline-block float-right">
-            <button className="btn px-6 btn-sm normal-case bg-[#FFF] text-[#000] hover:text-[#FFF] h-[40px]" onClick={() => addNewTeamMember()}>Filter</button>
+            <button className="btn px-6 btn-sm normal-case bg-[#FFF] text-[#000] hover:text-[#FFF] h-[40px]" onClick={() => addNewTeamMember()}><img src="/images/transation-filter-icon.svg" alt="" className="mr-[5px] hover:fill-[#FFF]" /> Filter</button>
         </div>,
         <div className="inline-block float-right mr-2">
-            <button className="btn px-6 btn-sm normal-case bg-[#FFF] text-[#000] hover:text-[#FFF] h-[40px]" onClick={() => addNewTeamMember()}>Sorted By</button>
+            <button className="btn px-6 btn-sm normal-case bg-[#FFF] text-[#000] hover:text-[#FFF] h-[40px]" onClick={() => addNewTeamMember()}><img src="/images/transaction-sortby-icon.svg" alt="" className="mr-[5px]" /> Sorted By</button>
         </div>,
-        <div className="inline-block float-right mr-2 bg-[red]">
-            <input type="search" name="" id="" placeholder="Search" className="border"/>
-        </div>
+        <div className="inline-block float-right mr-2">
+            <InputSearch/>
+        </div>,
+        
         
         
         ]

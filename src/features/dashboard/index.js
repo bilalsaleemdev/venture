@@ -54,7 +54,12 @@ function Dashboard(){
 
 
         {/** ---------------------- Different charts ------------------------- */}
-            <div className="grid lg:grid-cols-1 mt-4 grid-cols-1 gap-6">
+        <div className=' bg-[] w-full h-[60px] border-b border-[#E4E4E4] flex gap-[20px] px-6'>
+                    <p className='h-[60px] bg-[] flex items-center text-[30px] font-semibold cursor-pointer'>Analytics</p>
+                    <p className='h-[60px] bg-[] text-[black] border-b-[3px] border-[black] font-semibold flex flex items-center cursor-pointer px-[12px]'><img src="/images/analytics-sales-icon.svg" alt="" /> Sales</p>
+                    <p className='h-[60px] bg-[] text-[#727272] font-semibold flex items-center cursor-pointer px-[12px]'><img src="/images/analytics-activity-icon.svg" alt="" /> Activity</p>
+        </div>
+            <div className="grid lg:grid-cols-1 mt-4 grid-cols-1 gap-6 mx-6">
                 <LineChart />
                 <DashboardTable />
                 {/* <BarChart /> */}
