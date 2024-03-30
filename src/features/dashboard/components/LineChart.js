@@ -75,7 +75,7 @@ function LineChart() {
               classNamePrefix="select"
               options={
                 [
-                  { value: '01', label: '01' },
+                  // { value: '01', label: '01' },
 
                 ]
               }
@@ -89,7 +89,7 @@ function LineChart() {
               classNamePrefix="select"
               options={
                 [
-                  { value: '01', label: '01' },
+                  // { value: '01', label: '01' },
 
                 ]
               }

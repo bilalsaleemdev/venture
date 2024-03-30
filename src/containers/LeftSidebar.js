@@ -30,7 +30,11 @@ function LeftSidebar() {
     return (
         <div className="drawer-side relative">
             <label htmlFor="left-sidebar-drawer" className="drawer-overlay"></label>
+<<<<<<< HEAD
             <ul className="menu  -p/t-2 w-80 bg-[#F9F9F9] text-base-content  border-r relative">
+=======
+            <ul className="menu  -p/t-2 w-[260px] bg-[#F9F9F9] text-base-content  border-r">
+>>>>>>> a28d92a93e6b0940ffbf359f8ca3d180a3c9d769
                 {/* <button className="btn btn-ghost bg-base-300  btn-circle z-50 top-0 right-0 mt-4 mr-2 absolute lg:hidden" onClick={() => close()}>
                     <XMarkIcon className="h-5 inline-block w-5" />
                 </button> */}
@@ -45,7 +49,7 @@ function LeftSidebar() {
                     {
                         routes.map((route, k) => {
                             return (
-                                <li className="pl-5" key={k}>
+                                <li className="px-5" key={k}>
                                     {
                                         route.submenu ?
                                             // <SidebarSubmenu {...route} />
@@ -54,7 +58,7 @@ function LeftSidebar() {
                                             (<NavLink
                                                 end
                                                 to={route.path}
-                                                className={({ isActive }) => `${isActive ? '-font-semibold  -bg-base-200 ' : '-font-normal'}`} >
+                                                className={({ isActive }) => `${isActive ? '-font-semibold  bg-base-200 ' : '-font-normal'}`} >
                                                 {route.icon} {route.name}
                                                 {
                                                     location.pathname === route.path ? (<span className="absolute inset-y-0 left-0 w-1 rounded-tr-md rounded-br-md -bg-primary "
