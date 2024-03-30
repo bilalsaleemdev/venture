@@ -46,18 +46,21 @@ function DashboardTable(){
     return(
         <>
             
-            <TitleCard title="Active Members" topMargin="mt-2" TopSideButtons={<TopSideButtons />}>
+            <TitleCard title="Transaction Details" topMargin="mt-2" TopSideButtons={<TopSideButtons />}>
 
                 {/* Team Member list in table format loaded constant */}
             <div className="overflow-x-auto w-full">
-                <table className="table w-full">
-                    <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Email Id</th>
-                        <th>Joined On</th>
-                        <th>Role</th>
-                        <th>Last Active</th>
+            
+                <table className="table w-full rounded-xl">
+                    <thead >
+                    <tr className="">
+                        <th className=" "> <input type="checkbox" name="" id="" /> Id</th>
+                        <th><span className="flex"><p className="text-[#727272]">Date</p> <img src="/images/dashboard-table-arrow.svg" alt="" /></span></th>
+                        <th><span className="flex"><p className="text-[#727272]">Client</p><img src="/images/dashboard-table-arrow.svg" alt="" /></span></th>
+                        <th><span className="flex"><p className="text-[#727272]">Company</p><img src="/images/dashboard-table-arrow.svg" alt="" /></span></th>
+                        <th><span className="flex"><p className="text-[#727272]">Payment</p><img src="/images/dashboard-table-arrow.svg" alt="" /></span></th>
+                        <th><span className="flex"><p className="text-[#727272]">Status</p><img src="/images/dashboard-table-arrow.svg" alt="" /></span></th>
+                        <th><span className="flex"><p className="text-[#727272]">Action</p><img src="/images/dashboard-table-arrow.svg" alt="" /></span></th>
                     </tr>
                     </thead>
                     <tbody>
@@ -65,22 +68,13 @@ function DashboardTable(){
                             members.map((l, k) => {
                                 return(
                                     <tr key={k}>
-                                    <td>
-                                        <div className="flex items-center space-x-3">
-                                            <div className="avatar">
-                                                <div className="mask mask-circle w-12 h-12">
-                                                    <img src={l.avatar} alt="Avatar" />
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <div className="font-bold">{l.name}</div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td>{l.email}</td>
-                                    <td>{l.joinedOn}</td>
+                                    <td><input type="checkbox" name="" id="" /> 1528902 </td>
+                                    <td className="flex"><img src="/images/dashboard-calender.svg" alt="" /> <p className="text-[#727272] font-medium">18/09/2016</p> </td>
+                                    <td className="font-medium text-[#727272]">Leslie Alexander</td>
+                                    <td className="font-medium text-[#727272]">Abstergo Ltd.</td>
+                                    <td>$2.120</td>
                                     <td>{getRoleComponent(l.role)}</td>
-                                    <td>{l.lastActive}</td>
+                                    <td> <img src="/images/dashboard-table-3-dot.svg" alt="" /></td>
                                     </tr>
                                 )
                             })
