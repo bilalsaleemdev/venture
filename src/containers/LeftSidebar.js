@@ -70,14 +70,14 @@ function LeftSidebar() {
                 </div>
 
 
-                <div className='sidebar-bottom flex items-center  w-[100%] mb-[10px] py-[10px] border-t absolute bottom-[0px] mt-[100px]'>
-                                            <div className='h-[50px] w-[50px] bg-[#F2F2F2] flex items-center justify-center rounded-[8px]'><span className='font-semibold text-[20px]'>M</span></div>
-                                            <p  className='font-semibold text-[20px] ml-[10px]'>Marketing Team’s</p>
-                                            <img src="/images/left-sidebar-bottom arrow.svg" alt="" className='ml-[10px] h-[20px] text-[black]' />
-                                    </div>
+                <div className='p-5 sidebar-bottom flex items-center  w-[100%] mb-[10px] py-[10px] border-t absolute bottom-[0px] mt-[100px]'>
+                    <div className='h-[40px] w-[40px] bg-[#F2F2F2] flex items-center justify-center rounded-[8px]'><span className='font-semibold text-[20px]'>M</span></div>
+                    <p className='font-semibold text-[16px] ml-[10px]'>Marketing Team’s</p>
+                    <img src="/images/left-sidebar-bottom arrow.svg" alt="" className='ml-[15px] h-[20px] text-[black]' />
+                </div>
             </ul>
             {/* <div className='footerposition reletive'> */}
-                {/* <div className='w-10 p-6 w-full bg-slate-50 '>
+            {/* <div className='w-10 p-6 w-full bg-slate-50 '>
                     <div class="relative w-full ">
                         <div class="grid grid-cols-3 gap-4">
                             <div className='text-center  bg-tabperp p-2 rounded-xl'>
@@ -97,24 +97,24 @@ function LeftSidebar() {
                     </div>
                 </div> */}
 
-                {/* <div className='w-10 p-6 w-full absolute'>
+            {/* <div className='w-10 p-6 w-full absolute'>
                     <div class="s w-full "> */}
-                        {/* <div class="grid grid-cols-12 "> */}
-                            {/* <div className="navbar  flex justify-between  header-trans z-10 shadow-md ">
+            {/* <div class="grid grid-cols-12 "> */}
+            {/* <div className="navbar  flex justify-between  header-trans z-10 shadow-md ">
                                 <div className="order-last"> */}
 
 
 
-                            {/* Profile icon, opening menu on click */}
+            {/* Profile icon, opening menu on click */}
 
-                            {/* </div>
+            {/* </div>
                             </div> */}
 
-                            {/* <div class="col-span-10"> */}
-                                {/* <div class="grid grid-cols-12 "> */}
-                                    {/* <div class="col-span-4"> */}
+            {/* <div class="col-span-10"> */}
+            {/* <div class="grid grid-cols-12 "> */}
+            {/* <div class="col-span-4"> */}
 
-                                        {/* <div className="dropdown dropdown-end ml-4">
+            {/* <div className="dropdown dropdown-end ml-4">
 
 
                                             <div className="dropdown dropdown-right bg-white">
@@ -127,12 +127,12 @@ function LeftSidebar() {
 
                                         </div>
                                     </div> */}
-                                    {/* <div className='sidebar-bottom flex w-[100%] bg-[red]'>
+            {/* <div className='sidebar-bottom flex w-[100%] bg-[red]'>
                                             <div className='h-[50px] w-[50px] bg-[#F2F2F2] flex items-center justify-center rounded-[8px]'><span className='font-semibold text-[20px]'>M</span></div>
                                             <p>Marketing Team’s</p>
                                             <img src="/images/dashboard-table-arrow.svg" alt="" />
                                     </div> */}
-                                    {/* <div class="col-span-8">
+            {/* <div class="col-span-8">
                                         <label className="">
                                             <div className=" text-base">
                                                 Michael Jordan
@@ -141,11 +141,11 @@ function LeftSidebar() {
                                         </label>
                                     </div> */}
 
-                                {/* </div> */}
-                                {/* <a onClick={logoutUser}> <img className="" src="/profile.png" alt="DashWind Logo" /></a> */}
+            {/* </div> */}
+            {/* <a onClick={logoutUser}> <img className="" src="/profile.png" alt="DashWind Logo" /></a> */}
 
-                            {/* </div> */}
-                            {/* <div class="col-span-2">
+            {/* </div> */}
+            {/* <div class="col-span-2">
                                 <button className="btn btn-ghost ml-4  btn-circle" onClick={() => openNotification()}>
                                     <div className="indicator">
                                         <BellIcon className="h-6 w-6" />
@@ -153,14 +153,14 @@ function LeftSidebar() {
                                     </div>
                                 </button>
                             </div> */}
-                        {/* </div> */}
-                    {/* </div> */}
-                {/* </div> */}
-                
             {/* </div> */}
-            
+            {/* </div> */}
+            {/* </div> */}
+
+            {/* </div> */}
+
         </div>
-        
+
     )
 }
 
