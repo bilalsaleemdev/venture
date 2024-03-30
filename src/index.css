@@ -111,3 +111,14 @@
 .image-height {
   height: 400px;
 }
+
+
+/* ------------------------Scrollbar------------------------- */
+
+::-webkit-scrollbar{
+  width: 8px;
+}
+::-webkit-scrollbar-thumb{
+  background-color: #000;
+  border-radius: 15px;
+}
