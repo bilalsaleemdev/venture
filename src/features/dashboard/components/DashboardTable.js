@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react"
 import { useDispatch, useSelector } from "react-redux"
 import TitleCard from "../../../components/Cards/TitleCard"
 import { showNotification } from '../../common/headerSlice'
+// import Input from "react-select/dist/declarations/src/components/Input"
 
 const TopSideButtons = () => {
 
@@ -13,12 +14,18 @@ const TopSideButtons = () => {
     }
 
     return (
-        [<div className="inline-block float-right">
+        [
+        <div className="inline-block float-right">
             <button className="btn px-6 btn-sm normal-case bg-[#FFF] text-[#000] hover:text-[#FFF] h-[40px]" onClick={() => addNewTeamMember()}>Filter</button>
         </div>,
         <div className="inline-block float-right mr-2">
             <button className="btn px-6 btn-sm normal-case bg-[#FFF] text-[#000] hover:text-[#FFF] h-[40px]" onClick={() => addNewTeamMember()}>Sorted By</button>
+        </div>,
+        <div className="inline-block float-right mr-2 bg-[red]">
+            <input type="search" name="" id="" placeholder="Search" className="border"/>
         </div>
+        
+        
         ]
     )
 }
