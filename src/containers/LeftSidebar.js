@@ -30,11 +30,7 @@ function LeftSidebar() {
     return (
         <div className="drawer-side relative">
             <label htmlFor="left-sidebar-drawer" className="drawer-overlay"></label>
-<<<<<<< HEAD
-            <ul className="menu  -p/t-2 w-80 bg-[#F9F9F9] text-base-content  border-r relative">
-=======
             <ul className="menu  -p/t-2 w-[260px] bg-[#F9F9F9] text-base-content  border-r">
->>>>>>> a28d92a93e6b0940ffbf359f8ca3d180a3c9d769
                 {/* <button className="btn btn-ghost bg-base-300  btn-circle z-50 top-0 right-0 mt-4 mr-2 absolute lg:hidden" onClick={() => close()}>
                     <XMarkIcon className="h-5 inline-block w-5" />
                 </button> */}
